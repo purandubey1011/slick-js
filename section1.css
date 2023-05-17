@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#section-1{
+    width: 100%;
+    height: 82vh;
+    /* background: gray; */
+    display: flex;
+    flex-direction: column;    
+    /* justify-content: space-between; */
+    align-items: center;
+}
+#sec1-searchBar{
+    width: 40vmax;
+    height: 4.5vmax;
+    background: rgb(255, 255, 255);
+    margin-top: 2vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: .5px solid rgb(224, 217, 217);
+    border-radius: 5px;
+    padding: 0 1vmax;
+    position: relative;
+    overflow: hidden;
+}
+#sec1-search-input{
+    border: none;
+    border-color: transparent;
+    position: relative;
+}
+#sec1-search-input::placeholder{
+    font-size: 1.3vmax
+}
+#sec1-search-logo{
+    background: #0078f8;
+    position: absolute;
+    right: 0;
+    width: 5vmax;
+    height: 5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.7vmax;
+    font-weight: 600;
+}
+
+.wrapper{
+    width:100%;
+    height: 34vmax;
+    /* height: 30vmax; */
+    padding-top: 20px;
+    text-align:center;
+    overflow: hidden;
+  }
+ 
+  .carousel{
+    width:100%;
+    margin:0px auto;
+    display: flex;
+  }
+  .slick-slide{
+    margin:5px;
+  }
+  .slick-slide img{
+    width:100%;
+    height: 25vmax;
+    border: 2px solid #fff;
+  }
+  .wrapper .slick-dots li button:before {
+    font-size:20px;
+    color:rgb(138, 117, 117);
+  }
+
+/* carousel start here */
+/* carousel end here */
+
+/* media queries */
+@media (max-width:995px){
+    #sec1-search-input::placeholder{
+        font-size: 1.5vmax
+    }
+}
+@media (max-width:600px){
+    #sec1-search-input::placeholder{
+        font-size: 2vmax
+    }
+    #sec1-searchBar{
+        width: 70vmax;
+        height: 8vmax;
+        margin-top: 4vmax;
+    }
+    #sec1-search-logo{
+        width: 10vmax;
+        height: 10vmax;
+    }
+
+    /* slick js */    
+      .carousel{
+        width:100%;
+        display: flex;
+      }
+      .slick-slide img{
+        width:100%;
+        height: 35vmax;
+        border: 2px solid #fff;
+      }
+    
+}
+
+@media (max-width:800px){
+    #sec1-searchBar{
+        width: 60vmax;
+        height: 7vmax;
+        margin-top: 4vmax;
+    }
+    #sec1-search-logo{
+        width: 10vmax;
+        height: 10vmax;
+        font-size: 3vmax;
+    }
+    #sec1-search-input::placeholder{
+        font-size: 2vmax
+    }
+    .wrapper{
+        width:100%;
+        height: 60vmax;
+        overflow: hidden;
+      }
+    .slick-slide img{
+        height: 35vmax;
+        width: 100%;
+      }
+}
